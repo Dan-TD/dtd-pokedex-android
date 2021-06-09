@@ -1,0 +1,10 @@
+<resources>
+    
+    <string name="app_name">Pokedex</string>
+
+    <string name="screens_content_pokedex_retry_message">Failed to load, please retry</string>
+    <string name="screens_content_pokedex_retry_button">Retry</string>
+
+    <string name="screens_content_pokedex_button_load_more">Load More</string>
+    <string name="screens_content_pokedex_button_loading_more">Loading More</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.content.pokedex.PokedexFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/pokedex_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewFlipper
+            android:id="@+id/pokedex_view_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true">
+
+            <ProgressBar
+                android:id="@+id/pokedex_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pokedex_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/pokedex_error_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/screens_content_pokedex_retry_message" />
+
+                <Button
+                    android:layout_width="44dp"
+                    android:layout_height="120dp"
+                    android:text="@string/screens_content_pokedex_retry_button" />
+
+            </LinearLayout>
+
+        </ViewFlipper>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
